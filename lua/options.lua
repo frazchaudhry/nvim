@@ -39,6 +39,10 @@ vim.opt.clipboard:append("unnamedplus")
 -- Allows selection to move past the space where there is an actual character
 vim.opt.virtualedit = "block"
 
+-- Incremental searching. As you type your search pattern (after pressing /), Vim highlights the first match
+-- of what you've typed so far in real time
+vim.opt.incsearch = true
+
 -- When searching for a word, and preceding the search command with "%s" will show all
 -- possible results and changes to the matching word in a split window to the bottom.
 -- Example: :%s /vim
@@ -54,11 +58,14 @@ vim.opt.ignorecase = true
 -- enables 24 bit colors which will allow us to use color schemes.
 vim.opt.termguicolors = true
 
+-- Turns scroll off when scroll reached the bottom or the top by the number of lines provided.
+vim.opt.scrolloff = 10
+
 -- Show column at 100 characters
 vim.opt.colorcolumn = "120"
 
 -- Highlights current line
--- vim.opt.cursorline = true
+vim.opt.cursorline = true
 
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 -- instead raise a dialog asking if you wish to save the current file(s)
@@ -86,3 +93,5 @@ vim.opt.autoread = true
 -- Set encoding
 vim.opt.encoding = "UTF-8"
 
+-- Increase the time before the autocommand for CursorHold activates: Default = 4000ms
+vim.opt.updatetime = 1000

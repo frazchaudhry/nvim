@@ -1,12 +1,12 @@
-return {
-    cmd = { "clangd" },
-    root_markers = { ".clangd", "compile_commands.json" },
-    filetypes = { "c", "cpp", "h", "hpp" },
-    capabilities = {
-    textDocument = {
-      semanticTokens = {
-        multilineTokenSupport = true
-      }
-    }
-  }
-}
+-- return {
+--     cmd = { "clangd" },
+--     root_markers = { ".clangd", "compile_commands.json" },
+--     filetypes = { "c", "cpp", "h", "hpp" },
+--     capabilities = {
+--     textDocument = {
+--       semanticTokens = {
+--         multilineTokenSupport = true
+--       }
+--     }
+--   }
+-- }
