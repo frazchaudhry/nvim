@@ -169,6 +169,7 @@ return {
         local servers = {
             clangd = {},
             gopls = {},
+            bashls = {},
             lua_ls = {
                 -- cmd = { ... },
                 -- filetypes = { ... },

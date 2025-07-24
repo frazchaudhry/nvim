@@ -8,7 +8,7 @@ return{
         config.setup({
             ensure_installed = {
                 "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline",
-                "cpp", "odin", "go" },
+                "cpp", "odin", "go", "bash" },
             highlight = { enable = true },
             indent = { enable = true },
             incremental_selection = {
