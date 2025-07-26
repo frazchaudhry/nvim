@@ -59,7 +59,7 @@ vim.opt.ignorecase = true
 vim.opt.termguicolors = true
 
 -- Turns scroll off when scroll reached the bottom or the top by the number of lines provided.
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 15
 
 -- Show column at 100 characters
 vim.opt.colorcolumn = "120"
