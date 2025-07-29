@@ -3,6 +3,7 @@ local s = ls.snippet
 local t = ls.text_node
 local i = ls.insert_node
 local fmt = require("luasnip.extras.fmt").fmt
+local rep = require("luasnip.extras").rep
 
 -- Function to generate the include guard name based on the filename
 local function generate_guard_name()
@@ -18,18 +19,19 @@ return {
         dscr = "Insert C/C++ include guards"
     },
         fmt([[
-        {tNode1} {tNode2}
+        {tNode1} {iNode1}
         {tNode3} {tNode2}
 
-        {iNode1}
+        {iNode2}
 
         {tNode4}{tNode2}
     ]],
             {
                 tNode1 = t("#ifndef"),
-                tNode2 = t(generate_guard_name()),
+                iNode1 = i(1),
+                tNode2 = rep(1),
                 tNode3 = t("#define"),
-                iNode1 = i(0),
+                iNode2 = i(0),
                 tNode4 = t("#endif //")
             }))
 }
