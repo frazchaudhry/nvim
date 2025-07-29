@@ -167,7 +167,14 @@ return {
         local capabilities = require('blink.cmp').get_lsp_capabilities()
 
         local servers = {
-            clangd = {},
+            clangd = {
+                capabilities = capabilities,
+                cmd = {
+                    "clangd",
+                    "--background-index",
+                    "--clang-tidy",
+                },
+            },
             gopls = {},
             bashls = {},
             lua_ls = {
