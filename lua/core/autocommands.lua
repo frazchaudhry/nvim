@@ -14,7 +14,6 @@ vim.api.nvim_create_autocmd("TermOpen", {
     end,
 })
 
-vim.api.nvim_create_augroup("C-Cplusplus", {})
 vim.api.nvim_create_autocmd("BufNewFile", {
     pattern = "*.h,*.hpp",
     callback = function()
