@@ -17,7 +17,7 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 
 -- Tab movement
 vim.keymap.set("n", "<M-Right>", "<cmd>tabnext<CR>", { desc = "Moves to the next tab." })
-vim.keymap.set("n", "<M-Left>", "<cmd>tabprev<CR>", { desc = "Moves to the next tab." })
+vim.keymap.set("n", "<M-Left>", "<cmd>tabprev<CR>", { desc = "Moves to the previous tab." })
 
 -- Opens a terminal window at the bottom
 vim.keymap.set("n", "<leader>1", function()
