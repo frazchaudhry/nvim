@@ -13,3 +13,23 @@ vim.api.nvim_create_autocmd("TermOpen", {
         vim.opt.relativenumber = false
     end,
 })
+
+vim.api.nvim_create_augroup("C-Cplusplus", {})
+vim.api.nvim_create_autocmd("BufNewFile", {
+    pattern = "*.h,*.hpp",
+    callback = function()
+        local filename = vim.fn.expand("%:t")
+        local guard_name = string.upper(filename):gsub("[^%w]", "_")
+        local lines = {
+            "#ifndef " .. guard_name,
+            "#define " .. guard_name,
+            "",
+            "",
+            "",
+            "#endif // " .. guard_name
+        }
+        vim.api.nvim_buf_set_lines(0, 0, 0, false, lines)
+        vim.cmd("normal 3k")
+        vim.cmd("startinsert!")
+    end
+})
