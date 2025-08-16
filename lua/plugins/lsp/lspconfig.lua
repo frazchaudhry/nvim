@@ -177,6 +177,7 @@ return {
             },
             gopls = {},
             bashls = {},
+            cmake = {},
             lua_ls = {
                 -- cmd = { ... },
                 -- filetypes = { ... },
