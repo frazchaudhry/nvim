@@ -177,6 +177,7 @@ return {
             },
             -- gopls = {},
             bashls = {},
+            ts_ls = {},
             cmake = {},
             lua_ls = {
                 -- cmd = { ... },
