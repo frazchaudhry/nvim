@@ -175,7 +175,7 @@ return {
                     "--clang-tidy",
                 },
             },
-            gopls = {},
+            -- gopls = {},
             bashls = {},
             cmake = {},
             lua_ls = {

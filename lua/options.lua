@@ -1,3 +1,7 @@
+vim.scriptencoding = "utf-8"
+vim.opt.encoding = "utf-8"
+vim.opt.fileencoding = "utf-8"
+
 -- Set the line numbers to show
 vim.opt.number = true
 
@@ -95,3 +99,6 @@ vim.opt.encoding = "UTF-8"
 
 -- Increase the time before the autocommand for CursorHold activates: Default = 4000ms
 vim.opt.updatetime = 1000
+
+-- Ignore directories in search
+vim.opt.wildignore:append({"*/build/*"})
