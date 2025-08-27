@@ -14,6 +14,12 @@ return {
                             ["<C-j>"] = actions.move_selection_next, -- move to next result
                             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist
                         }
+                    },
+                    file_ignore_patterns = {
+                        "build/",
+                        "cmake-build-debug/",
+                        "node_modules/",
+                        "%.git/"
                     }
                 }
             })
