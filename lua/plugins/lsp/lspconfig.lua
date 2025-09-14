@@ -179,7 +179,6 @@ return {
             bashls = {},
             ts_ls = {},
             cmake = {},
-            pyright = {},
             lua_ls = {
                 -- cmd = { ... },
                 -- filetypes = { ... },
