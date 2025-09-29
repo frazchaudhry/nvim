@@ -179,6 +179,7 @@ return {
             bashls = {},
             ts_ls = {},
             cmake = {},
+            ols = {},
             lua_ls = {
                 -- cmd = { ... },
                 -- filetypes = { ... },
