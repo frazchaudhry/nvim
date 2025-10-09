@@ -179,6 +179,7 @@ return {
             bashls = {},
             ts_ls = {},
             cmake = {},
+            pico8_ls = {},
             ols = {},
             lua_ls = {
                 -- cmd = { ... },
