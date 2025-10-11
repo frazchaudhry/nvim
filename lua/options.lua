@@ -102,3 +102,10 @@ vim.opt.updatetime = 1000
 
 -- Ignore directories in search
 vim.opt.wildignore:append({"*/build/*"})
+
+-- Configure neovim to detect .p8 files as lua
+vim.filetype.add({
+    extension = {
+        p8 = "lua"
+    }
+})

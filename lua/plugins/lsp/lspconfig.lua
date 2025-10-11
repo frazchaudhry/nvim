@@ -179,7 +179,9 @@ return {
             bashls = {},
             ts_ls = {},
             cmake = {},
-            pico8_ls = {},
+            pico8_ls = {
+                filetypes = {"p8"}
+            },
             ols = {},
             lua_ls = {
                 -- cmd = { ... },
